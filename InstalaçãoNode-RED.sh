@@ -30,5 +30,3 @@ firewall-cmd --state
 firewall-cmd --permanent --add-port=1-9999/tcp
 
 firewall-cmd --reload
-
-reboot
