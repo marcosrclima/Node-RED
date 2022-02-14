@@ -17,7 +17,7 @@ vim \
 openssh-server \
 dbus -y
 
-bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) -y
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered)
 
 systemctl enable nodered.service
 
@@ -27,6 +27,6 @@ systemctl start firewalld
 
 firewall-cmd --state
 
-firewall-cmd --permanent --add-port=1-9999/tcp -y
+firewall-cmd --permanent --add-port=1-9999/tcp
 
 firewall-cmd --reload
