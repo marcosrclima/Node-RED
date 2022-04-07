@@ -27,4 +27,6 @@ firewall-cmd --permanent --add-port=1-9999/tcp
 
 firewall-cmd --reload
 
-sudo bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) 
+bash <(curl -sL https://raw.githubusercontent.com/node-red/linux-installers/master/deb/update-nodejs-and-nodered) 
+
+systemctl enable nodered.service
